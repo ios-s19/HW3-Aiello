@@ -1,62 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pAM-YG-Hko">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes>
-        <!--Page 2-->
-        <scene sceneID="qDp-wr-Lgz">
-            <objects>
-                <viewController id="Q2s-8q-JdU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VSu-7N-vcI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ne5-yb-H7b"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Page 2" image="second.png" id="gZe-t1-Pkn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cGY-z6-oSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-366" y="15"/>
-        </scene>
-        <!--Page 1-->
-        <scene sceneID="Gdw-7i-iUc">
-            <objects>
-                <viewController title="Page 1" id="0I6-js-b3W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tab 1" image="first.png" id="Niz-yr-Jlf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U9Z-gY-W9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-366" y="-651"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="7dz-hd-ToK">
-            <objects>
-                <tabBarController id="pAM-YG-Hko" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lkQ-DI-1gv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="0I6-js-b3W" kind="relationship" relationship="viewControllers" id="SIj-KQ-Q3i"/>
-                        <segue destination="Q2s-8q-JdU" kind="relationship" relationship="viewControllers" id="30M-cn-c6b"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fKB-dL-Z7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1319" y="-318"/>
-        </scene>
-    </scenes>
-    <resources>
-        <image name="first.png" width="30" height="30"/>
-        <image name="second.png" width="30" height="30"/>
-    </resources>
+    <scenes/>
 </document>

@@ -9,12 +9,19 @@
 import UIKit
 
 class FirstTabViewController: UIViewController {
-
+    
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
+        
     }
+    
     
 
     /*
@@ -26,5 +33,10 @@ class FirstTabViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    
+    
 
 }

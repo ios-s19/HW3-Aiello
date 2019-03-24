@@ -16,6 +16,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // Set up the first screen
+        let screen1 = UIViewController()
+        screen1.view.backgroundColor = UIColor.red
+        screen1.tabBarItem.title = "Screen 2"
+        screen1.tabBarItem.image = UIImage(named: "second")
+        
+        
+        //Set Up Screen 2
+        let screen2 = UIViewController()
+        screen2.view.backgroundColor = UIColor.green
+        screen2.tabBarItem.title = "Screen 1"
+        screen2.tabBarItem.image = UIImage(named: "first")
+        
+        // set tab bar to have 2 tabe
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [screen1, screen2]
+        
+        // Make the tab bar the root
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
