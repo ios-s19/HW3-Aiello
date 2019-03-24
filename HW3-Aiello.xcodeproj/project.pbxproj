@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		69B9203C224839ED0023D94E /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B9203B224839ED0023D94E /* first.png */; };
 		69B9203E224843FD0023D94E /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B9203D224843FD0023D94E /* second.png */; };
+		69B920422248455D0023D94E /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B920412248455D0023D94E /* FirstTabViewController.swift */; };
+		69B92044224845890023D94E /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B92043224845890023D94E /* SecondTabViewController.swift */; };
 		69EC4A7F2247039700D34965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EC4A7E2247039700D34965 /* AppDelegate.swift */; };
 		69EC4A812247039700D34965 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EC4A802247039700D34965 /* ViewController.swift */; };
 		69EC4A842247039700D34965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EC4A822247039700D34965 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		69B9203B224839ED0023D94E /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = Assets.xcassets/first.png; sourceTree = "<group>"; };
 		69B9203D224843FD0023D94E /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = Assets.xcassets/second.png; sourceTree = "<group>"; };
+		69B920412248455D0023D94E /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
+		69B92043224845890023D94E /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
 		69EC4A7B2247039700D34965 /* HW3-Aiello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW3-Aiello.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69EC4A7E2247039700D34965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69EC4A802247039700D34965 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		69EC4A722247039600D34965 = {
 			isa = PBXGroup;
 			children = (
+				69B920412248455D0023D94E /* FirstTabViewController.swift */,
+				69B92043224845890023D94E /* SecondTabViewController.swift */,
 				69EC4A7D2247039700D34965 /* HW3-Aiello */,
 				69EC4A7C2247039700D34965 /* Products */,
 			);
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B920422248455D0023D94E /* FirstTabViewController.swift in Sources */,
 				69EC4A812247039700D34965 /* ViewController.swift in Sources */,
+				69B92044224845890023D94E /* SecondTabViewController.swift in Sources */,
 				69EC4A7F2247039700D34965 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
