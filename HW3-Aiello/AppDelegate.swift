@@ -37,11 +37,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // set some labels
-        var screen1Text: String = "Screen 1"
-        var screen2Text: String = "Screen 2"
+//        var screen1Text: String = "Screen 1"
+//        var screen2Text: String = "Screen 2"
         
         // more label stuff
-
+        
+        // I don't think I'll get to the label part of this - sigh
+        
 //        var screen1Label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 200, 20)]
 //        screen1Label.text = "Screen 1"
 //
@@ -80,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         screen1.tabBarItem.title = "Screeen 1"
         screen1.tabBarItem.image = UIImage(named: "first")
-        
+      
         
         
         //Set Up Screen 2
