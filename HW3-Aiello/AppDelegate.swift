@@ -37,9 +37,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
         // Set the hour of the day
-        let hour = NSCalendar.current.component(.hour, from : NSDate() as Date)
+         var hour = NSCalendar.current.component(.hour, from : NSDate() as Date)
         
-        
+        // Test DAY / NIGHT
+         // hour = 7 // day
+         // hour = 20 // night
         
         // Set up the first screen
         let screen1 = UIViewController()
