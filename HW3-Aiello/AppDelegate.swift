@@ -30,6 +30,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let darkerRed = UIColor(red: 62/255.0, green: 2/255.0, blue: 2/255.0, alpha: 1.0)
         let darkerGreen = UIColor(red: 03/255.0, green: 63/255.0, blue: 07/255.0, alpha: 1.0)
         
+        let nightScreen1 = darkerRed
+        let dayScreen1 = UIColor.red
+        let nightScreen2 = darkerGreen
+        let dayScreen2 = UIColor.green
+
         
         // Set the hour of the day
         let hour = NSCalendar.current.component(.hour, from : NSDate() as Date)
@@ -39,10 +44,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set up the first screen
         let screen1 = UIViewController()
 //        screen1.view.backgroundColor = UIColor.red
+        // I looked up the time and set the hour variable - it's based on a 24-hour clock
+        // so am would be 6-18 and pm is 18-23 and 0-6
         
-        if (hour > ){
-            screen1.view.backgroundColor = darkerRed }
-        else { screen1.view.backgroundColor = UIColor.red }
+        // By deduction, day is > 5 and < 18 so everything else is night
+        // assume day is 6 am - 6pm and night is 6pm - 6am
+        // but on a 24 hr clock, night is enumerated to 18-23 AND 0-6
+        // to avoid complicated switch or if statements
+        //
+        // it is night or it is day
+        // if hour > 5 and hour <18 it is day else it is night
+        //
+        //
+        
+        
+        // if hour > 5 and hour <18 it is day else it is night
+        if (hour > 5 && hour < 18 ){
+            screen1.view.backgroundColor = dayScreen1 }
+        else { screen1.view.backgroundColor = nightScreen1}
         
         
         screen1.tabBarItem.title = "Screeen 1"
@@ -51,8 +70,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Set Up Screen 2
         let screen2 = UIViewController()
+        
+        // if hour > 5 and hour <18 it is day else it is night
+        
 //        screen2.view.backgroundColor = UIColor.green
-        screen2.view.backgroundColor = darkerGreen
+        if (hour > 5 && hour < 18) {
+            screen2.view.backgroundColor = dayScreen2
+    
+        }else {
+            screen2.view.backgroundColor = nightScreen2
+        }
+//        screen2.view.backgroundColor = darkerGreen
         
         screen2.tabBarItem.title = "Screen 2"
         screen2.tabBarItem.image = UIImage(named: "second")
