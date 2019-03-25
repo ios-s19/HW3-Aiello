@@ -6,31 +6,56 @@
 //  Copyright © 2019 Tony Aiello. All rights reserved.
 //
 
+// For this homework, I did the views programatically
+//
+// I looked up the time and set the hour variable - it's based on a 24-hour clock
+// so am would be 5-17 and pm is 17-23 and 0-4
+
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+//    var darkerRed: UIColor
+//    var darkerGreen: UIColor
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
+        // Let's set some colors to work with
+        
+        let darkerRed = UIColor(red: 62/255.0, green: 2/255.0, blue: 2/255.0, alpha: 1.0)
+        let darkerGreen = UIColor(red: 03/255.0, green: 63/255.0, blue: 07/255.0, alpha: 1.0)
+        
+        
+        // Set the hour of the day
+        let hour = NSCalendar.current.component(.hour, from : NSDate() as Date)
+        
+        
+        
         // Set up the first screen
         let screen1 = UIViewController()
-        screen1.view.backgroundColor = UIColor.red
-        screen1.tabBarItem.title = "Screen 2"
-        screen1.tabBarItem.image = UIImage(named: "second")
+//        screen1.view.backgroundColor = UIColor.red
+        
+        if (hour > ){
+            screen1.view.backgroundColor = darkerRed }
+        else { screen1.view.backgroundColor = UIColor.red }
+        
+        
+        screen1.tabBarItem.title = "Screeen 1"
+        screen1.tabBarItem.image = UIImage(named: "first")
         
         
         //Set Up Screen 2
         let screen2 = UIViewController()
-        screen2.view.backgroundColor = UIColor.green
-        screen2.tabBarItem.title = "Screen 1"
-        screen2.tabBarItem.image = UIImage(named: "first")
+//        screen2.view.backgroundColor = UIColor.green
+        screen2.view.backgroundColor = darkerGreen
+        
+        screen2.tabBarItem.title = "Screen 2"
+        screen2.tabBarItem.image = UIImage(named: "second")
         
         // set tab bar to have 2 tabe
         
